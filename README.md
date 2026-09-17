@@ -1,23 +1,27 @@
-# ORBIT FLIP
+# JELLY TOWER · K_games Tiny Play Lab
 
-A tiny, instant-play arcade game for the whole world. Switch between two orbits, dodge red obstacles, and collect gold stars.
+[Play free](https://mrbeside.github.io/orbit-flip/) · [X](https://x.com/mottyan005) · [YouTube](https://www.youtube.com/channel/UCTdlvA_Z4UXAkALixNthxUQ)
 
-## Play
+Tap or press Space to drop a wobbly jelly. Align it with the tower: overhangs fall off, perfect drops keep the full width. Reach 12 layers to win. P / Escape pauses; the game also pauses on focus loss. Replay instantly after a miss.
 
-Open `index.html` in a modern browser. Tap the playfield or press **Space** to change orbit. Gold stars give **5 points**; survival gives **1 point per second**. A red obstacle ends the run. Press **P** or **Escape** to pause. The game also pauses when it loses focus.
+English, Japanese, Spanish, Portuguese and French. Local personal best, optional synthesized sound, reduced-motion support. No account, advertisements, analytics SDK or backend. Optional Google Fonts fall back to local fonts.
 
-English, Japanese, Spanish, Portuguese, and French are supported. The browser language is selected automatically; use the language menu to override it. Sound is off by default. Personal best and preferences stay in the current browser. No account, analytics, advertisements, or backend.
+## Files
 
-## Development
+- index.html / style.css: responsive page and creator links.
+- engine.js: deterministic simulation and Canvas renderer, shared by the game and promotional input replays.
+- game.js: browser controls, localization, sound, local best and pause handling.
+- archive/orbit-flip-v1/: preserved original experiment.
+- tools/test.cjs: physics, state transitions and localization checks. Run with node tools/test.cjs.
+- tools/server.cjs: local preview on 127.0.0.1:4173. Run with node tools/server.cjs.
+- tools/render-video.cjs: local production script using @napi-rs/canvas and an explicit FFmpeg path; adapt the local font/runtime paths on other machines.
 
-Plain HTML, CSS, JavaScript, and Canvas. No build step or package dependencies. Optional Google Fonts fall back to installed fonts if unavailable. All gameplay runs offline after the files are downloaded.
+No build step: open index.html, or serve this directory. GitHub Pages publishes main, root, with .nojekyll.
 
-Serve this directory using any static web server, or open `index.html` directly.
+## Media provenance
 
-## GitHub Pages
+Promotional footage is an input replay through the shipped game engine. Game rules, speeds, collisions and scores are unchanged. It is not represented as a human player's record. The renderer adds headings and records the original input times; sound effects are synthesized, with no third-party music.
 
-Publish the `main` branch, root directory, under repository **Settings → Pages → Deploy from a branch**. The `.nojekyll` file allows the files to be served unchanged.
+This is experiment 002, a new visual mechanic for the creator's short-game series. It is a hypothesis about visual clarity, not evidence that the first experiment performed poorly.
 
-## License
-
-MIT. See [LICENSE](LICENSE).
+MIT license.

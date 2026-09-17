@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0c1020">
+  <meta name="description" content="One tap. Two orbits. Endless possibilities. Dodge the red, collect the gold, and chase your best in ORBIT FLIP, a free instant-play arcade game.">
+  <title>ORBIT FLIP — One tap. Stay in orbit.</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+<main class="app">
+  <header><a class="brand" href="./" aria-label="Orbit Flip home"><span class="brand-icon">◉</span> ORBIT<span>FLIP</span><i>01</i></a><div class="tools"><select id="language" aria-label="Language"><option value="en">EN</option><option value="ja">日本語</option><option value="es">ES</option><option value="pt">PT</option><option value="fr">FR</option></select><button id="sound" class="icon-button" aria-label="Enable sound" aria-pressed="false">♪<span class="slash">╱</span></button></div></header>
+  <section class="game-shell" aria-label="Orbit Flip arcade game">
+    <div class="topline"><span class="eyebrow"><b></b><span data-text="arcade">THE ONE-TAP ARCADE</span></span><button id="pause" class="icon-button" aria-label="Pause" hidden>Ⅱ</button><span class="edition">VOL. 001 / ∞</span></div>
+    <div class="scoreboard"><div><span class="stat-label" data-text="score">SCORE</span><strong id="score">000</strong></div><div class="best"><span class="stat-label"><span class="star">✦</span> <span data-text="best">PERSONAL BEST</span></span><strong id="best">000</strong></div></div>
+    <div class="arena" id="arena"><canvas id="game" aria-label="Two circular lanes. Tap or press Space to switch lanes, avoid red obstacles and collect gold stars."></canvas><div class="center-mark" id="centerMark"><span>O / F</span><i>STAY IN MOTION</i></div><div class="overlay" id="overlay"><div class="intro" id="intro"><div class="pill" data-text="quick">SMALL GAME. BIG JUST-ONE-MORE.</div><h1>ORBIT<br><span>FLIP<span class="title-star">✳</span></span></h1><p data-text="tagline">One tap. Two orbits.<br>How long can you stay in motion?</p><button id="play" class="primary"><span data-text="play">LET’S PLAY</span><span>↗</span></button><span class="keyboard-hint" data-text="startHint">or press SPACE to start</span></div><div class="result" id="result" hidden><div class="pill" id="resultLabel">NICE RUN</div><h2 id="resultTitle">Out of orbit.</h2><strong id="finalScore">0</strong><p id="resultDetail"></p><button id="retry" class="primary"><span data-text="retry">ONE MORE GO</span><span>↗</span></button></div><div id="paused" class="result" hidden><div class="pill" data-text="paused">TAKE A BREATHER</div><h2 data-text="pauseTitle">In a holding orbit.</h2><button id="resume" class="primary"><span data-text="resume">KEEP GOING</span><span>→</span></button></div></div><div id="feedback" aria-live="polite"></div></div>
+    <div class="bottomline"><span class="live-dot"></span><span id="status" data-text="ready">READY WHEN YOU ARE</span><span class="coordinate">↗ 2 ORBITS · 1 TAP</span></div>
+  </section>
+  <section class="instructions" aria-label="How to play"><div><span class="instruction-icon tap">↔</span><p><strong data-text="switch">TAP TO SWITCH</strong><span data-text="switchHelp">Find your flow between orbits.</span></p></div><div><span class="instruction-icon danger">◆</span><p><strong data-text="avoid">DODGE THE RED</strong><span data-text="avoidHelp">A little space goes a long way.</span></p></div><div><span class="instruction-icon gold">✦</span><p><strong data-text="collect">CHASE THE GOLD</strong><span data-text="collectHelp">Each star adds 5 points.</span></p></div></section>
+  <footer><span data-text="footer">NO DOWNLOADS. JUST ONE MORE TRY.</span><span>MADE FOR YOUR NEXT BREAK <span class="footer-star">✳</span></span></footer>
+</main>
+</body>
+</html>
