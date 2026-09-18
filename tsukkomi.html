@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#232924"><title>ツッコミ劇場 — 間で、笑わせろ。</title><style>:root{--paper:#f4f0e5;--ink:#29352e;--red:#bd4936;--gold:#eac36f;--green:#46795f}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:"Yu Gothic","Hiragino Kaku Gothic ProN",Meiryo,sans-serif}button,a{-webkit-tap-highlight-color:transparent}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible{outline:3px solid #cf802e;outline-offset:4px}header{max-width:1300px;margin:auto;padding:27px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d7d6ca}.brand{font-size:25px;letter-spacing:-2px;color:var(--ink);font-weight:900;text-decoration:none}.brand>span{color:var(--red)}.brand small{display:block;letter-spacing:2px;font-size:8px;margin-top:2px}.header-right{display:flex;align-items:center;gap:17px;font-size:11px}.header-right button{background:none;border:1px solid #d0d2c6;border-radius:4px;padding:8px 13px;color:var(--ink)}.live-dot{width:6px;height:6px;background:var(--red);border-radius:50%;margin-right:-9px}main{max-width:1220px;margin:auto;padding:36px 0 15px}.intro{display:flex;align-items:center;justify-content:space-between;margin-bottom:27px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700}.intro h1{font-size:43px;letter-spacing:2px;margin:8px 0 0;font-weight:900}.intro em{color:var(--red);font-style:normal}.intro p{font-size:12px;line-height:2.1;color:#6d7268}.game-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:25px}.cabinet{border:1px solid #c7c9bc;border-radius:8px;overflow:hidden;background:#faf8f0;box-shadow:0 5px 0 #deded2}.stage-top{height:45px;background:#273930;color:#efeadd;display:flex;align-items:center;gap:15px;padding:0 22px;font-size:11px}.stage-top b{margin-left:12px;font-weight:400}.stage-top>span:nth-child(2){margin-left:auto;font-size:9px;letter-spacing:1.5px}.stage-top button{background:none;color:#e9e5d8;border:1px solid #657267;border-radius:3px}.stage{height:405px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 50% 0,#658470,#334f41 75%)}.spotlight{position:absolute;top:-50px;width:310px;height:410px;background:linear-gradient(#ffe5a22e,#ffe5a200);clip-path:polygon(43% 0,57% 0,100% 100%,0 100%);transform-origin:top}.spotlight.left{left:30px;transform:rotate(-15deg)}.spotlight.right{right:30px;transform:rotate(15deg)}.curtain{position:absolute;top:0;width:80px;height:365px;background:repeating-linear-gradient(90deg,#793329 0,#983e30 20px,#6f2e26 39px);z-index:2;border-bottom:7px solid #c99a52}.curtain-left{left:-16px;clip-path:polygon(0 0,100% 0,60% 25%,58% 70%,100% 100%,0 100%)}.curtain-right{right:-16px;transform:scaleX(-1);clip-path:polygon(0 0,100% 0,60% 25%,58% 70%,100% 100%,0 100%)}.stage-sign{position:absolute;top:17px;left:50%;transform:translateX(-50%);font-size:11px;letter-spacing:5px;color:#d8d8b3;text-align:center}.stage-sign span{display:block;font-size:6px;letter-spacing:2px;margin-top:4px}.bubble{position:absolute;z-index:4;top:56px;left:20%;width:60%;min-height:98px;padding:12px 18px 14px;background:#fff9e9;border-radius:6px;box-shadow:0 4px 0 #1d352836;text-align:center}.bubble:after{content:"";position:absolute;bottom:-13px;right:25%;border-top:14px solid #fff9e9;border-right:15px solid transparent}.bubble small{font-size:9px;letter-spacing:1px;color:#6f7662}.bubble #line{font-size:20px;font-weight:900;line-height:1.55;margin-top:5px;white-space:pre-line}.bubble.nod{border-top:4px solid #6e9b73}.bubble.joke{border-top:4px solid #bd4936}.performers{position:absolute;width:100%;height:300px;bottom:10px;z-index:2;overflow:visible}.floor{height:60px;position:absolute;bottom:0;width:100%;background:repeating-linear-gradient(0deg,#ab7951 0,#ab7951 17px,#966643 18px,#966643 19px);border-top:7px solid #b68a61}.audience{position:absolute;bottom:-20px;left:-10px;white-space:nowrap;color:#202e28;font-size:55px;letter-spacing:1px;z-index:3;line-height:1}.nameplate{position:absolute;bottom:61px;z-index:3;color:#f1ead7;font-size:10px}.nameplate span{font-size:8px;opacity:.6;margin-left:4px}.name-left{left:13%}.name-right{right:11%}.start-overlay{position:absolute;z-index:6;inset:auto 0 18px;display:flex;flex-direction:column;align-items:center;gap:8px}.ticket{background:#f9f4df;padding:6px 16px;transform:rotate(-3deg);font-size:11px;font-weight:700}.primary{border:1px solid #713021;border-bottom:5px solid #743225;background:var(--red);color:#fff8e6;border-radius:4px;padding:14px 30px;min-width:230px;font-size:18px;font-weight:900}.primary span{margin-left:45px}.start-overlay small{font-size:9px;color:white;background:#26392fc9;padding:3px 9px}.timing{padding:17px 24px 13px}.timing-title{display:flex;justify-content:space-between;gap:10px;font-size:10px;margin-bottom:12px}.timing-title>span:nth-child(2){color:#858679;font-size:9px}.timing-title i{margin:0 7px;color:#bbb}.track{position:relative;height:13px;border-radius:3px;background:#e3e4d7;overflow:visible}.target{position:absolute;left:65%;width:20%;height:100%;background:#eccb7c;border-left:1px dashed #b0873c;border-right:1px dashed #b0873c}.target:after{content:"";position:absolute;left:50%;height:100%;border-left:2px solid #f8edc4}#cursor{position:absolute;left:0;top:-4px;height:21px;width:4px;background:#304737;border-radius:2px;transform:translateX(-2px)}.timing-note{font-size:9px;color:#7a7f70;text-align:center;margin-top:8px}.controls{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;padding:0 18px 19px}.control{position:relative;border:1px solid #d2cabb;border-bottom:4px solid #d2cabb;border-radius:5px;background:#f6f0df;padding:14px 3px 9px;color:#654932;touch-action:manipulation;user-select:none}.control small{display:block;font-size:8px;letter-spacing:1px;margin:9px 0 7px}.control strong{display:block;font-size:15px;white-space:nowrap;letter-spacing:-.7px}.control>span:last-child{display:block;font-size:8px;margin-top:7px;opacity:.65}.key{position:absolute;top:5px;right:6px;font:9px monospace;border:1px solid #babca9;border-radius:2px;padding:1px 4px;opacity:.7}.control.nod{background:#e3ebdf;color:#375640;border-color:#b8cbb3}.control.why{background:#f5dfd6;color:#9a4031;border-color:#dfb7a6}.control.what{background:#f3e8ce;color:#856123;border-color:#d9c69c}.control.loud{background:#e5e5ef;color:#65617f;border-color:#c6c4d5}.control:active,.control.pressed{transform:translateY(3px);border-bottom-width:1px;margin-bottom:3px}.score-panel{background:#e8e9dd;border:1px solid #d5d8c9;border-radius:5px;padding:23px}.score-panel .eyebrow{font-size:9px;color:#727c6b}h2{font-size:15px;margin:12px 0 13px}.crowd-total strong{font-family:Georgia,serif;font-size:68px;font-weight:400;letter-spacing:-3px}.crowd-total span{margin-left:10px;font-size:12px}.crowd-meter{height:6px;background:#cfd5c4;border-radius:2px;overflow:hidden;margin-top:8px}#crowd-fill{width:66%;height:100%;background:#5c7861;transition:width .3s}.goal{display:flex;justify-content:space-between;font-size:9px;margin:9px 0 21px;color:#6a7565}.stats{border-top:1px solid #cbd0c1;padding-top:17px;display:flex;justify-content:space-between}.stats span{font-size:8px;letter-spacing:1px;display:block;color:#737d6f}.stats strong{display:block;font:25px Georgia,serif;margin-top:6px}.stats strong small{font:9px sans-serif}.best{border-top:1px solid #cbd0c1;margin-top:18px;padding-top:12px;font-size:9px;display:flex;justify-content:space-between;color:#6a7565}.guide-panel{padding:28px 7px 15px}.guide-number{font-size:8px;letter-spacing:2px;color:#93947f}.guide-panel h3{font-size:21px;line-height:1.7;margin:11px 0 17px}.guide-panel p{font-size:10px;margin:12px 0}.dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:7px}.green{background:#5c8863}.red{background:#c25a43}.tip{border-left:2px solid #c4b584;padding-left:12px;margin-top:23px;font-size:10px;line-height:1.8;color:#818170}#partner-comment{font-size:11px;margin-top:25px}#partner-comment small{display:block;text-align:right;font-size:9px;color:#8a8a78;margin-top:8px}.edition{font-size:8px;letter-spacing:1px;border-top:1px solid #d5d5c6;padding-top:14px;display:flex;justify-content:space-between;color:#868878}footer{display:flex;justify-content:space-between;margin-top:24px;font-size:9px;color:#8b8b7c}footer button{background:none;border:0;font-size:9px;color:#72796b}#feedback{position:absolute;z-index:5;top:49%;width:100%;text-align:center;color:#ffdf81;font-size:32px;font-weight:900;text-shadow:2px 3px #563428;pointer-events:none}#feedback small{display:block;font-size:13px;color:white}.hit #boke{transform-origin:535px 300px;animation:hit .35s}.hit #straight{transform-origin:260px 310px;animation:nod .35s}.nodanim #boke{transform-origin:535px 300px;animation:nod .35s}dialog{border:1px solid #bbbda9;border-radius:10px;background:var(--paper);color:var(--ink);padding:35px;max-width:520px;width:calc(100% - 36px);box-shadow:0 20px 100px #152b2940}dialog::backdrop{background:#182c26b3;backdrop-filter:blur(4px)}dialog h2{font-size:27px;margin:10px 0 20px}dialog p{font-size:13px;line-height:1.9}dialog a{color:#a74732}#close{position:absolute;right:12px;top:9px;border:0;background:none;font-size:25px}dialog .primary{width:100%;margin-top:15px}.result-number{font:64px Georgia,serif;color:var(--red)}.result-row{display:flex;justify-content:space-between;border-bottom:1px solid #d5d5c6;padding:10px 0;font-size:13px}.subbutton{display:block;width:100%;background:none;border:0;padding:15px;color:#687362;font-size:12px}[hidden]{display:none!important}@keyframes hit{30%{transform:rotate(13deg) translateX(8px)}75%{transform:rotate(-4deg)}}@keyframes nod{50%{transform:rotate(-4deg) translateY(8px)}}@media(min-width:1500px){main{padding-top:44px}.stage{height:445px}.performers{height:330px}.bubble{top:60px}}@media(max-width:1260px){main{margin:0 32px}.game-layout{grid-template-columns:minmax(0,1fr) 245px;gap:20px}.control strong{font-size:13px}}@media(max-width:900px){main{margin:0 20px}.game-layout{grid-template-columns:1fr}aside{display:grid;grid-template-columns:1fr 1fr;gap:20px}.edition{display:none}.guide-panel{padding:15px}.crowd-total strong{font-size:50px}.intro h1{font-size:36px}.stage{height:405px}}@media(max-width:560px){header{padding:17px 17px}.brand{font-size:21px}.header-right{gap:6px}.header-right>span{display:none}.header-right button{font-size:10px;padding:6px 8px}main{margin:0 12px;padding-top:23px}.intro{margin-bottom:20px}.intro h1{font-size:31px;letter-spacing:0}.intro .eyebrow{font-size:8px;letter-spacing:.5px}.intro p{display:none}.stage-top{padding:0 12px;font-size:10px;gap:8px}.stage-top b{margin-left:6px}.stage-top>span:nth-child(2){font-size:7px}.stage{height:345px}.curtain{width:48px;height:300px}.bubble{left:11%;width:78%;top:50px;min-height:88px;padding:10px 7px}.bubble #line{font-size:17px}.performers{width:140%;left:-20%;height:252px;bottom:10px}.nameplate{bottom:49px;font-size:9px}.nameplate span{display:none}.timing{padding:16px 15px 12px}.timing-title>span:nth-child(2){display:none}.controls{padding:0 10px 15px;gap:6px;grid-template-columns:1fr 1fr}.control{padding:9px 3px 8px}.control small{margin:3px 0 4px;font-size:8px}.control strong{font-size:16px}.control>span:last-child{display:none}.key{font-size:8px}.start-overlay{bottom:18px}.primary{padding:12px 25px}.audience{font-size:46px}aside{gap:10px;grid-template-columns:1fr}.score-panel{padding:15px;display:grid;grid-template-columns:1fr 1fr;gap:0 20px}.score-panel .eyebrow,.score-panel h2,.best{display:none}.crowd-total{grid-row:1/3}.crowd-total strong{font-size:42px}.crowd-meter{margin-top:14px}.goal{margin:5px 0}.stats{grid-column:1/3;padding-top:10px;margin-top:9px}.stats>div{display:flex;align-items:center;gap:14px}.stats strong{margin:0;font-size:21px}.guide-panel{display:none}footer{font-size:8px;gap:8px;line-height:1.8;margin-top:20px}footer button{font-size:8px}#feedback{font-size:27px;top:48%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+:root .bubble{top:48px;min-height:92px;padding:10px 14px}.bubble #line{font-size:19px;line-height:1.4}.performers{height:250px;bottom:7px}.bubble.nod #line{color:#3c7152}.bubble.joke #line{color:#a44132}.game-layout{align-items:start}@media(min-width:1500px){.performers{height:285px}}@media(max-width:560px){:root .bubble{top:44px;padding:10px 7px}.bubble #line{font-size:16px}.performers{height:195px;bottom:13px}}
+</style><meta name="description" content="間で、笑わせろ。相づちと3種類のツッコミを使い分ける無料ブラウザゲーム。スマホ・PC対応、全3幕。"><meta property="og:title" content="ツッコミ劇場 — 間で、笑わせろ。"><meta property="og:description" content="ボケを読んで、ぴったりの間でツッコもう。無料・登録不要のオリジナル漫才ゲーム。"><meta property="og:type" content="website"></head>
+<body>
+<header><a class="brand" href="./tsukkomi.html">ツ<span>ッ</span>コミ劇場<small>TSUKKOMI THEATER</small></a><div class="header-right"><span class="live-dot"></span><span>本日も、開演。</span><button id="sound" aria-pressed="false">音 OFF</button><button id="help">遊び方 ↗</button></div></header>
+<main>
+<section class="intro"><div><div class="eyebrow">お笑いタイミングアクション / ひとり用</div><h1>間で、<em>笑わせろ。</em></h1></div><p>ボケにはツッコミ。話には相づち。<br>相方とあなたで、満員の劇場へ。</p></section>
+<div class="game-layout">
+<section class="cabinet" aria-label="漫才ステージ">
+<div class="stage-top"><span id="stage-name">第一幕 <b>はじめてのバイト</b></span><span id="round">STAGE 01 / 03</span><button id="pause" disabled aria-label="一時停止">Ⅱ</button></div>
+<div class="stage" id="stage">
+<div class="spotlight left"></div><div class="spotlight right"></div><div class="curtain curtain-left"></div><div class="curtain curtain-right"></div><div class="stage-sign">笑福座<span>SHOFUKU-ZA</span></div>
+<div class="bubble" id="bubble"><small id="cue-label">本日のコンビ「からまわり」</small><div id="line">どうも〜！<br>準備はええですか？</div></div>
+<svg class="performers" viewBox="0 0 800 370" aria-label="青いスーツのツッコミと黄色いスーツのボケ" role="img">
+<defs><pattern id="checks" width="18" height="18" patternUnits="userSpaceOnUse"><rect width="18" height="18" fill="#e9b84f"/><path d="M0 9h18M9 0v18" stroke="#bb882e" stroke-width="1"/></pattern></defs>
+<ellipse cx="263" cy="348" rx="94" ry="12" fill="#271d1b" opacity=".3"/><ellipse cx="535" cy="348" rx="94" ry="12" fill="#271d1b" opacity=".3"/>
+<g id="straight" stroke="#292f2b" stroke-width="5" stroke-linejoin="round"><path d="M232 267l-6 67h31l10-59 9 59h32l-10-68" fill="#344d61"/><path d="M224 330l-13 17h48v-17m15 0v17h48l-15-17" fill="#292f2b"/>
+<path d="M229 165q-34 10-48 90l23 7 28-54v75h68v-78l24 41 21-13q-17-64-45-68" fill="#658dad"/><path d="M252 163l14 94 18-94" fill="#fff6df"/><path d="M264 180l-7 37 9 15 9-15-7-37" fill="#d86447"/><path d="M245 163l-13 31 17 9-9 12 26 50m25-102 13 31-17 9 9 12-30 50" fill="none"/>
+<path d="M199 247q-24-2-24 11t28 11m122-29q12-23 24-16t-4 27" fill="#efbe95"/><rect x="252" y="141" width="31" height="29" fill="#efbe95"/><path d="M220 93q-10-10-15 4t17 21m86-25q12-10 15 4t-16 21" fill="#efbe95"/><path d="M219 66q46-35 88 0v61q-2 36-43 37-43-3-45-37z" fill="#f7cfa7"/><path d="M217 86q-21-65 28-63 47-30 64 18 13 16-1 46l-12-32q-39 19-66 0z" fill="#303d38"/><path d="M235 91l14-3m31 0 14 3" fill="none"/><path d="M242 101v7m44-7v7m-24-1-3 15h9m-22 14q18 9 33-1" fill="none" stroke-linecap="round"/></g>
+<g id="boke" stroke="#292f2b" stroke-width="5" stroke-linejoin="round"><path d="M499 270l-4 65h31l8-57 13 57h30l-11-66" fill="#805b35"/><path d="M495 332l-12 15h44v-15m19 0v15h47l-17-15" fill="#292f2b"/>
+<path d="M498 166q-37 3-53 65l22 10 31-37v80h72v-82l30 28 19-19q-28-42-54-45" fill="url(#checks)"/><path d="M518 164l15 84 18-84" fill="#fff6df"/><path d="M532 177l-8 41 10 14 8-14-7-41" fill="#4e7b64"/><path d="M511 164l-16 27 19 13-10 12 29 50m25-102 16 27-19 13 10 12-32 50" fill="none"/>
+<path d="M450 227q-25 0-22 17t34 0m140-30q-8-27 6-28l8 12q15-13 20-2t-20 27" fill="#f7cfa7"/><rect x="519" y="139" width="31" height="31" fill="#efbe95"/><path d="M487 94q-14-10-15 6t16 19m91-25q14-10 16 6t-17 19" fill="#f7cfa7"/><path d="M486 65q43-28 91 0v65q-4 34-45 34t-46-34z" fill="#f7cfa7"/><path d="M485 90q-21-40 10-58 4-26 24-15 11-22 27-7 24-9 26 14 29 5 7 64l-12-35q-30 17-71 0z" fill="#4c3b2c"/><path d="M500 89l15 3m30 0 17-3m-58 16 8 4m36 0 8-4m-29 1-4 16h9" fill="none" stroke-linecap="round"/><path d="M513 135q19 25 38-1z" fill="#fff9e9"/><ellipse cx="499" cy="125" rx="9" ry="4" fill="#e68f77" stroke="none"/><ellipse cx="562" cy="125" rx="9" ry="4" fill="#e68f77" stroke="none"/></g>
+<g stroke="#30342f" stroke-width="5"><path d="M400 203v137m-23 4 23-10 23 10" fill="none"/><rect x="389" y="160" width="23" height="48" rx="11" fill="#c1c5b0"/><path d="M394 169h13m-13 8h13m-13 8h13m-13 8h13" stroke-width="2"/></g></svg>
+<div class="nameplate name-left">あなた <span>ツッコミ</span></div><div class="nameplate name-right">まるお <span>ボケ</span></div><div id="feedback" aria-live="polite"></div><div class="floor"></div><div class="audience" aria-hidden="true">● ● ● ● ● ● ● ● ● ● ● ● ● ● ●</div>
+<div class="start-overlay" id="start-overlay"><div class="ticket">さあ、あなたの出番です。</div><button class="primary" id="start">開演する <span>→</span></button><small>約90秒のステージ / コイン不要</small></div>
+</div>
+<div class="timing"><div class="timing-title"><span id="timing-text">セリフを読んで、ぴったりの「間」で。</span><span>早い <i>／</i> ぴったり <i>／</i> 遅い</span></div><div class="track"><div class="target"></div><div id="cursor"></div><div class="track-end"></div></div><div class="timing-note">針が金色のゾーンに来たら、ボタンを押そう。</div></div>
+<div class="controls"><button data-action="nod" class="control nod"><span class="key">Space</span><small>話をつなぐ</small><strong>ほうほう</strong><span>相づち</span></button><button data-action="why" class="control why"><span class="key">←</span><small>おかしなボケに</small><strong>なんでやねん！</strong><span>ツッコミ</span></button><button data-action="what" class="control what"><span class="key">↓</span><small>意味不明な話に</small><strong>わけわからん！</strong><span>ツッコミ</span></button><button data-action="loud" class="control loud"><span class="key">→</span><small>自慢・大声に</small><strong>やかましいわ！</strong><span>ツッコミ</span></button></div>
+</section>
+<aside><section class="score-panel"><div class="eyebrow">TONIGHT'S LIVE</div><h2>今夜の盛り上がり</h2><div class="crowd-total"><strong id="crowd">120</strong><span>人</span></div><div class="crowd-meter"><div id="crowd-fill"></div></div><div class="goal"><span>観客数</span><span>目標 <b id="goal">180</b> 人</span></div><div class="stats"><div><span>SCORE</span><strong id="score">00000</strong></div><div><span>COMBO</span><strong id="combo">0 <small>連続</small></strong></div></div><div class="best">自己ベスト <b id="best">0</b></div></section><section class="guide-panel"><span class="guide-number">01 — HOW TO PLAY</span><h3>いいツッコミは、<br>いい相づちから。</h3><p><span class="dot green"></span>緑のセリフには「ほうほう」</p><p><span class="dot red"></span>赤のセリフには合うツッコミ</p><div class="tip">最後まで読んでから、<br>金色のゾーンで決めよう。</div><div id="partner-comment">「一緒に、満員にしたろな！」<small>— 相方・まるお</small></div></section><div class="edition">VOL. 01 <span>笑いは、ふたりでつくる。</span></div></aside>
+</div><footer><span>架空のコンビによる、オリジナル漫才ゲーム。</span><button id="research">このゲームの着想と調査 ↗</button></footer>
+</main>
+<dialog id="modal"><button id="close" aria-label="閉じる">×</button><div id="modal-body"></div></dialog><script>(() => {
+  'use strict';
+  const $ = id => document.getElementById(id);
+  const names = {nod:'ほうほう',why:'なんでやねん！',what:'わけわからん！',loud:'やかましいわ！'};
+  const acts = [
+    {title:'はじめてのバイト',goal:180,cues:[
+      ['最近、コンビニで\nバイト始めてん。','nod','まずは相づちで、話をつなごう。'],
+      ['「袋いりますか？」って\n店長を袋に入れてもうた。','why','入れるのは商品や！'],
+      ['レジの操作も\n覚えなあかんねん。','nod','相方の話を聞こう。'],
+      ['お会計は、\n昨日の右折でお願いします。','what','時間と方向が混ざってるで！'],
+      ['接客の声だけは\n誰にも負けへん。','nod','そろそろ大きな声が来そう。'],
+      ['いらっしゃいませぇぇ！！\n隣町のお客さまぁぁ！！','loud','店の中に聞こえたらええねん！']
+    ]},
+    {title:'あこがれの料理人',goal:260,cues:[
+      ['今日は手料理を\nごちそうしたるわ。','nod','まずは話を聞いてみよう。'],
+      ['隠し味を隠しすぎて、\n自分でも見つからへん。','why','宝探しちゃうねん！'],
+      ['レシピはちゃんと\n覚えてきてんで。','nod','続きのボケに備えよう。'],
+      ['火曜日を大さじ２、\n徒歩５分まで煮込みます。','what','何を作ってるんや！'],
+      ['俺の料理、星３つは\n間違いないと思うねん。','nod','相方、ちょっと自信満々。'],
+      ['うまい！天才！俺、最高！\nまだ何も作ってへんけど！','loud','作ってから言えや！']
+    ]},
+    {title:'ふたりの大舞台',goal:340,cues:[
+      ['いつか大きな舞台に\n立ちたいなあ。','nod','最後の一幕。息を合わせよう。'],
+      ['まず身長を伸ばすために\n舞台の上に脚立置こ。','why','大きくするのは舞台や！'],
+      ['コンビ名も新しく\n考えてきてん。','nod','どんな名前やろう？'],
+      ['「冷蔵庫の徒歩、\nときどき概念」です！','what','名前から何も伝わらん！'],
+      ['でも、お客さんの笑顔が\nいちばんうれしいな。','nod','最後まで、いい相づちを。'],
+      ['みんな、俺だけ見てや！\n相方の分も俺の拍手や！','loud','ふたりで漫才やろ！']
+    ]}
+  ];
+  let mode='idle',act=0,cue=0,score=0,crowd=120,combo=0,maxCombo=0,perfects=0,hits=0,total=0;
+  let startAt=0,phase='reading',phaseAt=0,pauseAt=0,pendingAdvance=false,muted=true,audio;
+  const WINDOW=2100, CENTER=.75, READ=2400, FEEDBACK=1300;
+  let best=0;try{best=Number(localStorage.getItem('tsukkomi-best'))||0;}catch{}
+  $('best').textContent=best.toLocaleString('ja-JP');
+  function tone(kind){
+    if(muted)return;
+    try{
+      audio ||= new (window.AudioContext||window.webkitAudioContext)(); audio.resume();
+      const notes=kind==='perfect'?[523,659,784]:kind==='good'?[440,587]:kind==='bad'?[160,120]:[330];
+      notes.forEach((f,i)=>{const o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime+i*.065;o.type=kind==='bad'?'triangle':'sine';o.frequency.value=f;g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(.13,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+.18);o.connect(g);g.connect(audio.destination);o.start(t);o.stop(t+.2);});
+    }catch{}
+  }
+  function hud(){
+    $('score').textContent=String(score).padStart(5,'0');$('crowd').textContent=crowd;
+    $('combo').innerHTML=combo+' <small>連続</small>';
+    $('goal').textContent=acts[act].goal;$('crowd-fill').style.width=Math.min(100,crowd/acts[act].goal*100)+'%';
+    $('round').textContent='STAGE 0'+(act+1)+' / 03';
+    $('stage-name').innerHTML=['第一幕','第二幕','第三幕'][act]+' <b>'+acts[act].title+'</b>';
+  }
+  function showCue(){
+    phase='reading';phaseAt=performance.now();pendingAdvance=false;
+    const c=acts[act].cues[cue];$('line').textContent=c[0];$('bubble').className='bubble '+(c[1]==='nod'?'nod':'joke');
+    $('cue-label').textContent=(c[1]==='nod'?'相づちの出番':'ツッコミの出番')+' · '+(cue+1)+' / 6';
+    $('timing-text').textContent='まずはセリフを読もう…';$('cursor').style.left='0%';$('feedback').textContent='';
+    $('stage').classList.remove('hit','nodanim');
+  }
+  function start(){
+    if($('modal').open)$('modal').close();act=0;cue=0;score=0;crowd=120;combo=0;maxCombo=0;perfects=0;hits=0;total=0;
+    mode='playing';$('start-overlay').hidden=true;$('pause').disabled=false;$('pause').textContent='Ⅱ';hud();showCue();tone('good');
+    $('start').blur();
+  }
+  function judge(action){
+    if(mode!=='playing'||phase==='feedback')return;
+    const expected=acts[act].cues[cue][1];const elapsed=performance.now()-startAt;
+    const p=phase==='reading'?-1:elapsed/WINDOW;
+    let title,detail,kind='bad',gain=0,people=-16;
+    total++;
+    if(action===null){title='あれ、ツッコミは？';detail='見逃し！ 次は「'+names[expected]+'」で返そう。';}
+    else if(p<.48){title='まだ早い！';detail='セリフを聞いて、金色のゾーンまで待とう。';}
+    else if(action!==expected){title='それちゃう！';detail='ここは「'+names[expected]+'」がぴったり。';}
+    else{
+      hits++;combo++;maxCombo=Math.max(maxCombo,combo);
+      if(Math.abs(p-CENTER)<=.1){title=expected==='nod'?'いい相づち！':'お見事、ツッコミ！';kind='perfect';gain=1000+Math.min(combo,10)*100;people=24;perfects++;}
+      else{title='ええ感じ！';kind='good';gain=500+Math.min(combo,10)*50;people=12;}
+      detail=(kind==='perfect'?'間、ぴったり！':p<CENTER?'ちょっと早め。':'ちょっと遅め。')+' +'+gain.toLocaleString('ja-JP');
+    }
+    if(kind==='bad')combo=0;
+    score+=gain;crowd=Math.max(0,crowd+people);
+    phase='feedback';phaseAt=performance.now();
+    $('feedback').innerHTML=title+'<small>'+detail+'</small>';$('feedback').style.color=kind==='bad'?'#fff1d3':'#ffdb70';
+    $('timing-text').textContent=kind==='bad'?'次のひと言で、取り返そう。':combo+' COMBO — その調子！';
+    $('partner-comment').textContent=kind==='bad'?'「次、頼むで〜！」':'「'+acts[act].cues[cue][2]+'」';
+    $('stage').classList.remove('hit','nodanim');void $('stage').offsetWidth;
+    if(kind!=='bad')$('stage').classList.add(expected==='nod'?'nodanim':'hit');
+    hud();tone(kind);
+  }
+  function result(clear){
+    mode='result';$('pause').disabled=true;
+    if(score>best){best=score;try{localStorage.setItem('tsukkomi-best',String(best));}catch{}$('best').textContent=best.toLocaleString('ja-JP');}
+    const rank=clear?(perfects>=15?'伝説の名コンビ':perfects>=10?'笑福座の看板コンビ':'期待の若手コンビ'):'まだまだ、これから！';
+    modal('<div class="eyebrow">'+(clear?'THANK YOU FOR COMING':'またのご来場、お待ちしています')+'</div><h2>'+rank+'</h2><div class="result-number">'+score.toLocaleString('ja-JP')+'</div><p>'+(clear?'三幕完走、おつかれさま！ どうも、ありがとうございました！':'観客数が目標に届きませんでした。緑は相づち、赤は合うツッコミ。金色のゾーンを狙って再挑戦！')+'</p><div class="result-row"><span>観客数</span><b>'+crowd+' 人</b></div><div class="result-row"><span>最大コンボ</span><b>'+maxCombo+' 連続</b></div><div class="result-row"><span>ぴったりの間</span><b>'+perfects+' / '+total+' 回</b></div><button class="primary" id="retry">もう一度、舞台へ →</button>');
+    $('retry').onclick=start;
+  }
+  function advance(){
+    if(crowd===0){result(false);return;}
+    cue++;
+    if(cue>=acts[act].cues.length){
+      if(crowd<acts[act].goal){result(false);return;}
+      if(act===2){result(true);return;}
+      mode='intermission';const next=act+1;
+      modal('<div class="eyebrow">STAGE CLEAR</div><h2>劇場、あったまってきた！</h2><p>'+crowd+'人のお客さんが見ています。<br>次の演目は「'+acts[next].title+'」。目標は'+acts[next].goal+'人！</p><button class="primary" id="next">次の幕へ →</button>');
+      $('next').onclick=()=>{$('modal').close();act=next;cue=0;mode='playing';hud();showCue();};
+    }else showCue();
+  }
+  function loop(now){
+    if(mode==='playing'){
+      if(phase==='reading'&&now-phaseAt>=READ){phase='window';startAt=now;$('timing-text').textContent='金色のゾーンで、今だ！';tone('tick');}
+      if(phase==='window'){
+        const p=(now-startAt)/WINDOW;$('cursor').style.left=Math.min(100,p*100)+'%';
+        if(p>=1)judge(null);
+      }
+      if(phase==='feedback'&&now-phaseAt>=FEEDBACK&&!pendingAdvance){pendingAdvance=true;advance();}
+    }
+    requestAnimationFrame(loop);
+  }
+  function modal(html){$('modal-body').innerHTML=html;if(!$('modal').open)$('modal').showModal();}
+  function pause(){if(mode!=='playing')return;pauseAt=performance.now();mode='paused';$('pause').textContent='▶';}
+  function resume(){if(mode!=='paused')return;const delta=performance.now()-pauseAt;phaseAt+=delta;startAt+=delta;mode='playing';$('pause').textContent='Ⅱ';}
+  function pauseDialog(){pause();modal('<div class="eyebrow">INTERVAL</div><h2>ちょっと、ひと息。</h2><p>相方も袖で待っています。準備ができたら続きをどうぞ。</p><button class="primary" id="resume">舞台に戻る →</button>');$('resume').onclick=()=>{$('modal').close();resume();};}
+  $('start').onclick=start;
+  document.querySelectorAll('[data-action]').forEach(b=>b.onclick=()=>{b.blur();judge(b.dataset.action);});
+  document.addEventListener('keydown',e=>{
+    if(e.repeat||$('modal').open)return;
+    const map={Space:'nod',ArrowLeft:'why',ArrowDown:'what',ArrowRight:'loud'};
+    if(map[e.code]&&mode==='playing'){e.preventDefault();const button=document.querySelector('[data-action="'+map[e.code]+'"]');button.classList.add('pressed');setTimeout(()=>button.classList.remove('pressed'),130);judge(map[e.code]);}
+    if(e.code==='Escape'&&mode==='playing')pauseDialog();
+  });
+  $('pause').onclick=()=>{if(mode==='playing')pauseDialog();};
+  $('sound').onclick=()=>{muted=!muted;$('sound').textContent='音 '+(muted?'OFF':'ON');$('sound').setAttribute('aria-pressed',String(!muted));tone('good');};
+  $('help').onclick=()=>{pause();modal('<div class="eyebrow">HOW TO PLAY</div><h2>笑いは「間」が命。</h2><p>① セリフを読む。緑なら相づち、赤ならツッコミ。<br>② 針が動いたら、金色のゾーンに来るまで待つ。<br>③ 内容に合うボタンを一度だけ押す！</p><p><b>Space：ほうほう</b> — ふつうの話に相づち。<br><b>←：なんでやねん！</b> — おかしな行動に。<br><b>↓：わけわからん！</b> — 意味の通らない話に。<br><b>→：やかましいわ！</b> — 大声や自慢に。</p><p>タップでも操作できます。連続成功で得点アップ。各幕の観客数ノルマを超えて、全3幕の完走を目指そう。1つのセリフにつき判定は1回。早押し・見逃し・違う種類は観客が減ります。</p><p>音は右上から切り替え。Esc / Ⅱ で一時停止できます。</p>');};
+  $('research').onclick=()=>{pause();modal('<div class="eyebrow">RESEARCH NOTES</div><h2>あのツッコミを、ブラウザに。</h2><p>着想元の候補は、ナムコが2002年7月12日に発売予定と発表したアーケードゲーム『つっこみ養成ギプス ナイス★ツッコミ』。人形とペダルを操作し、相づちやツッコミで観客を増やす作品です。</p><p>本作は「種類を選ぶ」「間を合わせる」「観客を増やす」の3点を、タップとキー操作に置き換えた独自のミニゲームです。ネタ・キャラクター・イラスト・音は独自制作。原作の公式移植ではありません。</p><p><a href="https://www.bandainamcoent.co.jp/corporate/press/namco/48/48-010.pdf" target="_blank" rel="noopener">ナムコの公式発表（2002年6月20日） ↗</a><br><a href="https://game.watch.impress.co.jp/docs/20020719/nice.htm" target="_blank" rel="noopener">GAME Watch 当時のプレイレポート ↗</a></p>');};
+  $('close').onclick=()=>{
+    if(mode==='intermission'){ $('next').click();return;}
+    $('modal').close();resume();if(mode==='result'){$('start-overlay').hidden=false;$('start').textContent='もう一度、開演する →';}
+  };
+  $('modal').addEventListener('cancel',e=>{e.preventDefault();$('close').click();});
+  document.addEventListener('visibilitychange',()=>{if(document.hidden&&mode==='playing')pauseDialog();});
+  hud();requestAnimationFrame(loop);
+})();
+</script>
+</body></html>
